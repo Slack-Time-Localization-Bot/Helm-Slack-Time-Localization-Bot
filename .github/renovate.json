@@ -1,0 +1,54 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base"
+    ],
+    "baseBranches": [
+        "main"
+    ],
+    "rebaseWhen": "conflicted",
+    "labels": [
+        "dependencies"
+    ],
+    "repositories": [
+        "Slack-Time-Localization-Bot/Helm-Slack-Time-Localization-Bot"
+    ],
+    "automerge": true,
+    "automergeType": "pr",
+    "platformAutomerge": true,
+    "recreateClosed": true,
+    "automergeStrategy": "merge-commit",
+    "prHourlyLimit": 10,
+    "bumpVersion": "patch",
+    "regexManagers": [
+        {
+            "fileMatch": [
+                "(^|/)Chart\\.yaml$"
+            ],
+            "matchStrings": [
+                "#\\s?renovate: image=(?<depName>.*?)\\s?appVersion:\\s?\\\"?(?<currentValue>[\\w+\\.\\-]*)"
+            ],
+            "datasourceTemplate": "docker"
+        }
+    ],
+    "packageRules": [
+        {
+            "matchDatasources": [
+                "docker"
+            ],
+            "versioning": "regex:^(?<major>\\d+)-(?<minor>\\d+)-(?<patch>\\d+)$"
+        }
+    ],
+    "allowedPostUpgradeCommands": [
+        "./bump_chart_version.sh"
+    ],
+    "postUpgradeTasks": {
+        "commands": [
+            "./bump_chart_version.sh"
+        ],
+        "fileFilters": [
+            "**/*"
+        ],
+        "executionMode": "branch"
+    }
+}
