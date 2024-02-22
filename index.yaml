@@ -3,6 +3,17 @@ entries:
   slack-time-localization-bot:
   - apiVersion: v2
     appVersion: 0.1.1-2024-02-22
+    created: "2024-02-22T17:22:19.641277139Z"
+    description: Detect temporal expressions in Slack messages (tomorrow at 5 pm)
+      and translate them for readers in other timezones.
+    digest: 3674108eb62a5f5e13331fd50a8bac4fce3c89becd9990c57e430399a377739d
+    name: slack-time-localization-bot
+    type: application
+    urls:
+    - https://github.com/Slack-Time-Localization-Bot/Helm-Slack-Time-Localization-Bot/releases/download/slack-time-localization-bot-0.1.1/slack-time-localization-bot-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.1-2024-02-22
     created: "2024-02-22T15:27:36.7137944Z"
     description: Detect temporal expressions in Slack messages (tomorrow at 5 pm)
       and translate them for readers in other timezones.
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://github.com/Slack-Time-Localization-Bot/Helm-Slack-Time-Localization-Bot/releases/download/slack-time-localization-bot-0.1.0/slack-time-localization-bot-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-22T15:27:36.713804048Z"
+generated: "2024-02-22T17:22:19.641287468Z"
