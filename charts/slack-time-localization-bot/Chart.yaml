@@ -4,6 +4,7 @@ description: Detect temporal expressions in Slack messages (tomorrow at 5 pm) an
 maintainers:
   - name: Philipp Hossner
     email: philipp.hossner@posteo.de
+    url: https://github.com/phihos
 
 # A chart can be either an 'application' or a 'library' chart.
 #
