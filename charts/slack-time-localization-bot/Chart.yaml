@@ -2,9 +2,8 @@ apiVersion: v2
 name: slack-time-localization-bot
 description: Detect temporal expressions in Slack messages (tomorrow at 5 pm) and translate them for readers in other timezones.
 maintainers:
-  - name: Philipp Hossner
+  - name: phihos
     email: philipp.hossner@posteo.de
-    url: https://github.com/phihos
 
 # A chart can be either an 'application' or a 'library' chart.
 #
