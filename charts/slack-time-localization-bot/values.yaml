@@ -71,6 +71,14 @@ volumeMounts: []
 #   mountPath: "/etc/foo"
 #   readOnly: true
 
+environment:
+  - name: SLACK_APP_TOKEN
+    value: "changeme"
+  - name: SLACK_BOT_TOKEN
+    value: "changeme"
+  - name: DEBUG
+    value: "false"
+
 nodeSelector: {}
 
 tolerations: []
