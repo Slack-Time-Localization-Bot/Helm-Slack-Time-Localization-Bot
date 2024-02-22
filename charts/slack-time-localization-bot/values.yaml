@@ -33,6 +33,7 @@ podSecurityContext: {}
 
 securityContext:
   runAsNonRoot: true
+  allowPrivilegeEscalation: false
   runAsUser: 65534
   capabilities:
     drop:
