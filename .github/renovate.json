@@ -19,7 +19,7 @@
     "recreateWhen": "always",
     "automergeStrategy": "merge-commit",
     "prHourlyLimit": 10,
-    "bumpVersion": "patch",
+    "bumpVersion": "build",
     "customManagers": [
         {
             "customType": "regex",
