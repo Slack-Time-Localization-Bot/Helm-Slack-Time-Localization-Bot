@@ -1,7 +1,7 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:base"
+        "config:recommended"
     ],
     "baseBranches": [
         "main"
@@ -16,12 +16,13 @@
     "automerge": true,
     "automergeType": "pr",
     "platformAutomerge": true,
-    "recreateClosed": true,
+    "recreateWhen": "always",
     "automergeStrategy": "merge-commit",
     "prHourlyLimit": 10,
     "bumpVersion": "patch",
-    "regexManagers": [
+    "customManagers": [
         {
+            "customType": "regex",
             "fileMatch": [
                 "(^|/)Chart\\.yaml$"
             ],

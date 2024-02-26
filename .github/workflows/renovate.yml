@@ -10,9 +10,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
       - name: Self-hosted Renovate
-        uses: renovatebot/github-action@8f6b0f762415909f60b0efb1817c4dee029ea806 # v40.1.1
+        uses: renovatebot/github-actionv40.1.1
         with:
           configurationFile: .github/renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}
         env:
-          LOG_LEVEL: 'info'
+          LOG_LEVEL: 'debug'
